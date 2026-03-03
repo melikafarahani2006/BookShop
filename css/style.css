@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(146, 235, 198);
+    border-top: 1px solid white;
+    width: 100%;
+    /* margin-left:100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
+    direction: rtl;
+}
+
+.navbar li {
+    padding: 20px 15px;
+    position: relative;
+}
+
+.navbar li a {
+     color: #131010 ;
+     text-decoration: none;
+     font-size: 19px;
+}
+
+.navbar li a:hover {
+    color: rgb(252, 251, 251);
+}
+
+.navbar li:hover {
+    background: #999595;
+}
+
+.drop-down{
+    list-style: none;
+    position: absolute;
+    right: 0;
+    background-color:rgb(248, 244, 246);
+    border-radius: 5px;
+    min-width: 160px;
+    height:0;
+    /* transition: 0.3s; */
+    visibility: hidden;
+    padding: 10px;
+    top: 63px;
+    right: -20px;
+    z-index: 900;
+}
+
+.navbar li:hover .drop-down {
+    border-radius: 5px;
+    min-width: 160px;
+    height: 350px;
+    visibility: visible;
+}
+
+.drop-down li {
+    padding: 1px 11px;
+    /* border: 1px solid black; */
+    margin-top: 4px;
+    text-align: center;
+}
+
+.drop-down li {
+    opacity: 0;
+}
+
+.navbar:hover li {
+    opacity: 1;
+}
+
+
+
+
+.drop-down2{
+    list-style: none;
+    position: absolute;
+    right: 0;
+    background-color:rgb(248, 244, 246);
+    border-radius: 5px;
+    min-width: 160px;
+    height: 0;
+    /* transition: 0.3s; */
+    visibility: hidden;
+    padding: 10px;
+    top: 63px;
+    right: -20px;
+    z-index: 999;
+}
+
+.navbar li:hover .drop-down2 {
+    border-radius: 5px;
+    min-width: 160px;
+    height: 230px;
+    visibility: visible;
+}
+
+.drop-down2 li {
+    padding: 1px 11px;
+    /* border: 1px solid black; */
+    margin-top: 4px;
+    text-align: center;
+}
+
+.drop-down2 li {
+    opacity: 0;
+}
+
+.navbar:hover li {
+    opacity: 1;
+}
